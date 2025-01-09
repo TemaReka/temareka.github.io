@@ -12,6 +12,16 @@ body {
         font-family: var(--font-family-accent);
         font-weight: 500;
         margin-bottom: var(--sm-gap);
+        text-wrap: balance;
+    }
+
+    @include middle {
+
+        h1 {
+            font-size: 5em;
+            line-height: 1.1em;
+        }  
+     
     }
 
     p:has(.marginBeforeTopic) {
@@ -153,6 +163,12 @@ body {
         &:not(.header div, .header p/*, p.leading*/) {
             width: 80%;
             margin-bottom: calc(1 * var(--md-gap));
+        }
+    }
+
+    @include middle {
+        .leading {
+            font-size: 2em;
         }
     }
 
