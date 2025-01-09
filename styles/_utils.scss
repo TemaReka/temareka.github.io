@@ -1,0 +1,47 @@
+@use 'helpers' as *;
+
+.container {
+    max-width: calc(var(--container-width));
+    padding: 0 var(--container-padding-x);
+    margin-inline: auto;
+}
+
+.differenceContainer {
+    display: flex;
+    gap: var(--sm-gap);
+    margin: var(--md-gap) 0 var(--section-gap) 0;
+}
+
+.review {
+    display: flex;
+    gap: var(--md-gap);
+
+    &-img {
+        flex: 3;
+    }
+
+    &-dscr {
+        flex: 1;
+    }
+}
+
+.textP {
+    max-width: 70%;
+}
+
+.flexVertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.marginBeforeTopic {
+    margin-bottom: var(--lg-gap);
+}
+
+p:not(:last-child), a {
+    margin-bottom: var(--sm-gap);
+}   
+
+// .fullWidth {
+//     width: 100%;
+// }

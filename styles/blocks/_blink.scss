@@ -1,0 +1,46 @@
+.blink {
+
+    &__heading-trans {
+        margin-bottom: var(--md-gap);
+        margin-top: var(--md-gap);
+
+        &-example {
+            flex: 1;
+
+            &:nth-child(2) {
+                gap: var(--sm-gap);
+
+                & .blink__heading-trans-example-img {
+
+                    // &:nth-child(1) {
+                    // }
+
+                    &:nth-child(2) {
+                        display: flex;
+                        gap: var(--sm-gap);
+                        & picture {
+                            max-width: 100%;
+                            flex: 3;
+                        }
+
+                        & p {
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__body {
+        &-img {
+            margin-bottom: var(--md-gap);
+
+            & img:nth-child(1) {
+                margin-bottom: var(--md-gap);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.akai {
+
+    &__heading-trans {
+        margin-bottom: var(--md-gap);
+        margin-top: var(--md-gap);
+
+        &:nth-child(8){
+            flex-wrap: wrap;
+            
+            & .akai__heading-trans-example:nth-of-type(2) {
+                flex: 1;
+            }
+
+            & .akai__heading-trans-example:nth-of-type(1) {
+                flex: 1.2707159298357012461306452893087;
+            }
+            
+            & .akai__heading-trans-example:nth-of-type(3) {
+                width: 100%;
+            }
+        }
+
+        &:nth-child(6) {
+            & .akai__heading-trans-example:nth-of-type(1) {
+                flex: 1;
+            }
+
+            & .akai__heading-trans-example:nth-of-type(2) {
+                flex: 1.2530537655092815235163989612388;
+            }
+        }
+
+
+
+    }
+
+    &__body {
+        &-img {
+            margin-bottom: var(--md-gap);
+
+            & img:nth-child(1) {
+                margin-bottom: var(--md-gap);
+            }
+        }
+    }
+
+}

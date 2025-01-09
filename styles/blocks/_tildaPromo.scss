@@ -1,0 +1,24 @@
+.tildaPromo {
+
+    &__heading-trans {
+        margin-bottom: var(--md-gap);
+        margin-top: var(--md-gap);
+    }
+
+    &__heading-trans-example {
+        &:nth-child(1) {
+            flex: 1;
+        }
+
+        &:nth-child(2) {
+            flex: 1;
+        }
+    }
+
+    &__body {
+        &-img {
+            margin-bottom: var(--md-gap);
+        }
+    }
+
+}

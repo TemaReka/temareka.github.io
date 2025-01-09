@@ -1,0 +1,23 @@
+.remakes {
+    &__example {
+        margin-bottom: var(--lg-gap);
+
+        max-width: 100%;
+        &-img {
+            display: flex;
+            gap: var(--sm-gap);
+            margin-bottom: var(--sm-gap);
+
+            & span {
+                display: flex;
+                align-items: center;
+                font-size: 3em;
+                color: #333;
+            }
+
+            & div {
+                flex: 1;
+            }
+        }
+    }
+}

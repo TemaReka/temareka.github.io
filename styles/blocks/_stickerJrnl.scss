@@ -1,0 +1,24 @@
+.stickerJrnl {
+
+    &__heading-trans {
+        margin-bottom: var(--md-gap);
+        margin-top: var(--md-gap);
+    }
+
+    &__heading-trans-example {
+        max-width: 70%;
+    }
+
+    &__body {
+        &-img {
+            margin-bottom: var(--md-gap);
+            display: flex;
+            gap: var(--sm-gap);
+
+            // & img:nth-child(1) {
+            //     margin-bottom: var(--md-gap);
+            // }
+        }
+    }
+
+}

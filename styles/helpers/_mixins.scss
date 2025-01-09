@@ -1,0 +1,52 @@
+@use 'functions' as *;
+@use 'sass:math';
+
+// @mixin fluid($max: 48, $min: 16) {
+//     $maxViewportWidth: 1600;
+//     $minViewportWidth: 360;
+
+//     $maxSize: math.div($max, 16);
+//     $minSize: math.div($min, 16);
+//     $maxWidth: math.div($maxViewportWidth, 16);
+//     $minWidth: math.div($minViewportWidth, 16);
+
+//     $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
+//     $yAxisIntersection: -$minWidth * $slope + $minSize;
+
+//     font-size: clamp(
+//         #{$minSize * 1rem},
+//         #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
+//         #{$maxSize * 1rem}
+//     );
+    
+// }
+
+@mixin linkIcon ($width: rem(26), $height: rem(26), $link: '.././icons/telegram.svg') {
+    content: '';
+    display: inline-block;
+    width: $width;
+    height: $height;
+    background-image: url($link);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+@mixin enlargedClick ($sm-gap: var(--sm-gap)) {
+    content: ''; 
+    position: absolute; 
+    inset: calc(-1 * var(--sm-gap)) calc( calc(-1 * var(--sm-gap)) / 2);
+}
+
+// @mixin enlargedClickLastChild ($sm-gap: var(--sm-gap)) {
+//     content: ''; 
+//     position: absolute; 
+//     left: calc( calc(-1 * var(--sm-gap)) / 2);
+//     top: calc(-1 * var(--sm-gap));
+//     bottom: calc(-1 * var(--sm-gap));
+//     right: -10%;
+//     // inset: calc(-1 * var(--sm-gap)) calc( calc(-1 * var(--sm-gap)) / 2);
+// }

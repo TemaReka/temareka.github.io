@@ -1,0 +1,9 @@
+.sites {
+    &__itemContainer {
+        margin-bottom: var(--lg-gap);
+
+        &-img {
+            margin-bottom: var(--sm-gap);
+        }
+    }
+}

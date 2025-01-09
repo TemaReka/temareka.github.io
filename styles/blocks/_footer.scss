@@ -1,0 +1,6 @@
+@use '../helpers' as *;
+
+footer {
+    display: flex;
+    gap: var(--sm-gap);
+}
