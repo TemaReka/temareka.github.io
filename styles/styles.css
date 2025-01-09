@@ -288,18 +288,12 @@ body {
   scroll-behavior: smooth;
 }
 body h1 {
-  font-size: 3em;
-  line-height: 1.2em;
+  font-size: 4em;
+  line-height: 1.1em;
   font-family: var(--font-family-accent);
   font-weight: 500;
   margin-bottom: var(--sm-gap);
   text-wrap: balance;
-}
-@media (width <= 57.74875rem) {
-  body h1 {
-    font-size: 5em;
-    line-height: 1.1em;
-  }
 }
 body p:has(.marginBeforeTopic) {
   margin-bottom: var(--lg-gap);
@@ -416,7 +410,7 @@ body .leading:not(.header div, .header p) {
 }
 @media (width <= 57.74875rem) {
   body .leading {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 body .wrappingLink {
@@ -431,6 +425,11 @@ body section p {
 }
 body .header__description-itemWrap-links {
   font-size: 0.8em;
+}
+@media (width <= 57.74875rem) {
+  body .header__description-itemWrap-links {
+    font-size: 1em;
+  }
 }
 body .caption {
   font-size: 0.7em;
@@ -594,11 +593,6 @@ body section.pageNav a {
 @media (width <= 81.06125rem) {
   .header__description-itemWrap-links {
     flex-wrap: wrap;
-  }
-}
-@media (width <= 57.74875rem) {
-  .header__description-itemWrap-links a, .header__description-itemWrap-links p {
-    font-size: 1.4em;
   }
 }
 @media (width <= 81.06125rem) {

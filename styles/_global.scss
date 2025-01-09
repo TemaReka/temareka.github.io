@@ -7,22 +7,17 @@ body {
     scroll-behavior: smooth;
 
     h1 {
-        font-size: 3em;
-        line-height: 1.2em;
+        font-size: 4em;
+        line-height: 1.1em;
         font-family: var(--font-family-accent);
         font-weight: 500;
         margin-bottom: var(--sm-gap);
         text-wrap: balance;
     }
 
-    @include middle {
-
-        h1 {
-            font-size: 5em;
-            line-height: 1.1em;
-        }  
+    // @include middle {
      
-    }
+    // }
 
     p:has(.marginBeforeTopic) {
         margin-bottom: var(--lg-gap);
@@ -168,7 +163,7 @@ body {
 
     @include middle {
         .leading {
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
 
@@ -187,6 +182,10 @@ body {
 
     .header__description-itemWrap-links {
         font-size: 0.8em;
+
+        @include middle {
+            font-size: 1em;
+        }
     }
 
     .caption {
