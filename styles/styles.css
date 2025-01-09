@@ -469,6 +469,13 @@ body section.pageNav a {
   gap: var(--lg-gap);
   align-items: center;
 }
+@media (width <= 81.06125rem) {
+  .header {
+    flex-direction: column;
+    gap: var(--md-gap);
+    align-items: flex-start;
+  }
+}
 .header__photo {
   flex: 1;
   position: relative;
@@ -483,19 +490,46 @@ body section.pageNav a {
   bottom: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 90%, rgb(255, 255, 255) 100%);
 }
+@media (width <= 81.06125rem) {
+  .header__photo img {
+    max-height: 50vh;
+  }
+}
 .header__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
 }
+@media (width <= 81.06125rem) {
+  .header__description-wrap {
+    display: flex;
+    gap: var(--md-gap);
+  }
+}
+@media (width <= 57.74875rem) {
+  .header__description-wrap {
+    flex-direction: column;
+  }
+}
 .header__description-heading {
   margin-bottom: calc(var(--md-gap) - 0.3125rem);
+}
+@media (width <= 81.06125rem) {
+  .header__description-heading {
+    margin-bottom: var(--sm-gap);
+  }
 }
 .header__description-links {
   display: flex;
   flex-direction: column;
   gap: var(--sm-gap);
+}
+@media (width <= 81.06125rem) {
+  .header__description-links {
+    flex-direction: row;
+    gap: var(--md-gap);
+  }
 }
 .header__description-links a {
   position: relative;
@@ -528,12 +562,14 @@ body section.pageNav a {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transform: translateY(-35%);
 }
 .header__description-links p {
   margin-bottom: 0;
 }
 .header__description-itemWrap {
   margin-bottom: var(--md-gap);
+  flex: 1;
 }
 .header__description-itemWrap-links {
   display: flex;
@@ -541,6 +577,21 @@ body section.pageNav a {
 }
 .header__description-itemWrap-links a, .header__description-itemWrap-links p {
   margin-bottom: 0;
+}
+@media (width <= 81.06125rem) {
+  .header__description-itemWrap-links {
+    flex-wrap: wrap;
+  }
+}
+@media (width <= 81.06125rem) {
+  .header__description-itemWrap {
+    margin-bottom: var(--md-gap);
+  }
+}
+@media (width <= 57.74875rem) {
+  .header__description-itemWrap:nth-child(1) {
+    margin-bottom: 0;
+  }
 }
 
 a:nth-child(1) > .tables__grid-item {

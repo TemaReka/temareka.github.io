@@ -6,6 +6,12 @@
     gap: var(--lg-gap);
     align-items: center;
 
+    @include laptop {
+        flex-direction: column;
+        gap: var(--md-gap);
+        align-items: flex-start;
+    }
+
     &__photo {
         flex: 1;
         position: relative; 
@@ -20,6 +26,12 @@
             bottom: 0;
             background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0.7) 90%, rgba(255, 255, 255, 1) 100%);
         }
+
+        & img {
+            @include laptop {
+                max-height: 50vh;
+            }
+        }
     }
 
     &__description {
@@ -28,14 +40,38 @@
         justify-content: space-between;
         flex: 1;
 
+        @include laptop {
+            &-wrap {
+                display: flex;
+                gap: var(--md-gap);
+            }  
+        }
+
+        
+        @include middle {
+            &-wrap {
+                flex-direction: column;
+            }  
+        }
+
+
         &-heading {
             margin-bottom: calc(var(--md-gap) - rem(5));
+
+            @include laptop {
+                margin-bottom: var(--sm-gap);
+            }
         }
 
         &-links {
             display: flex;
             flex-direction: column;
             gap: var(--sm-gap);
+
+            @include laptop {
+                flex-direction: row;
+                gap: var(--md-gap);
+            }
 
             & a {
                 position: relative;
@@ -54,6 +90,7 @@
                 &:nth-child(2) {
                     &::after {
                         @include linkIcon(rem(26), rem(26), '.././icons/mail.svg');
+                        transform: translateY(-35%); 
                     }
                 }
 
@@ -74,12 +111,28 @@
 
         &-itemWrap {
             margin-bottom: var(--md-gap);
+            flex: 1;
 
             &-links {
                 display: flex;
                 gap: var(--sm-gap);
 
                 & a, p {
+                    margin-bottom: 0;
+                }
+
+                @include laptop {
+                    flex-wrap: wrap;
+                }
+                
+            }
+
+            @include laptop {
+                margin-bottom: var(--md-gap);
+            }
+
+            @include middle {
+                &:nth-child(1) {
                     margin-bottom: 0;
                 }
                 
