@@ -35,7 +35,22 @@ body {
         transition: color 0.5s ease;
 
 
-        &:hover {
+        // &:hover {
+
+        // }
+
+        &:not(a:last-child):not(.wrappingLink):not(.leading):before {
+            @include enlargedClick();
+        }
+
+        &:last-child:not(.wrappingLink) {
+            flex: 10;
+            &::before {
+                @include enlargedClick();
+            }
+        }
+
+        @include hover {
             color: oklch(var(--hover-link-color));
             text-decoration: underline;
             text-decoration-thickness: rem(1); /* Задаём толщину подчёркивания */
@@ -46,15 +61,15 @@ body {
             transition: color 0s;
         }
 
-        &:not(a:last-child):not(.wrappingLink):not(.leading):before {
-            @include enlargedClick();
-        }
-
-        &:last-child:not(.wrappingLink) {
-            flex: 1;
-            &::before {
-                @include enlargedClick();
-            }
+        @include hover(false) {
+            color: oklch(var(--hover-link-color));
+            text-decoration: underline;
+            text-decoration-thickness: rem(1); /* Задаём толщину подчёркивания */
+            text-underline-offset: 0.175em; /* Задаём сдвиг подчёркивания */
+            text-decoration-color: oklch(var(--hover-link-color));
+            text-decoration-skip: none; /* Запрещаем подчёркиванию пропускать выносные элементы букв */
+            text-decoration-skip-ink: none;
+            transition: color 0s;
         }
             
     }
