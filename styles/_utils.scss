@@ -10,6 +10,16 @@
     display: flex;
     gap: var(--sm-gap);
     margin: var(--md-gap) 0 var(--section-gap) 0;
+
+    @include middleSm {
+        flex-direction: column;
+        margin: var(--md-gap) 0 var(--lg-gap) 0;
+
+        & > span {
+            justify-content: center;
+            transform: rotate(90deg);
+        }
+    }
 }
 
 .review {
@@ -22,6 +32,10 @@
 
     &-dscr {
         flex: 1;
+    }
+
+    @include middleSm {
+        flex-direction: column;
     }
 }
 

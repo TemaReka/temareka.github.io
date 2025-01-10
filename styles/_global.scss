@@ -208,7 +208,11 @@ body {
     .caption {
         font-size: 0.7em;
         text-wrap: balance;
-        margin-bottom: 0;
+        margin-bottom: var(--sm-gap);
+
+        @include middleSm {
+            font-size: 1em;
+        }
     }
 
     .spaceBtm {
@@ -221,6 +225,30 @@ body {
 
     .media {
         padding-left: fluid(40, 30);
+        margin-bottom: 0;
+        // color: black;
+        // text-decoration-color: black;
+        text-decoration-thickness: 0.8px;
+
+        &::after {
+            @include linkIcon('.././icons/youtube.svg');   
+        }
+    }
+
+    .youtube-media {
+        padding-left: fluid(38, 30);
+        margin-bottom: 0;
+        // color: black;
+        // text-decoration-color: black;
+        text-decoration-thickness: 0.8px;
+
+        &::after {
+            @include linkIcon('.././icons/youtube.svg');   
+        }
+    }
+
+    .telegram-media {
+        padding-left: fluid(35, 22);
         margin-bottom: 0;
         // color: black;
         // text-decoration-color: black;
@@ -245,10 +273,6 @@ body {
 
         & a {
             margin-bottom: 0;
-
-            &:nth-child(2) {
-                padding-left: fluid(32, 20);
-            }
         }
     }
 }
