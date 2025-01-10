@@ -137,6 +137,11 @@
                 @include middle {
                     max-width: 80%;
                 }
+
+                @include sm {
+                    max-width: 100%;
+                    text-wrap: pretty;
+                }
             }
 
             @include laptop {

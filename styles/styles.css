@@ -457,12 +457,17 @@ body .leading {
   text-wrap: balance;
 }
 body .leading:not(.header div, .header p) {
-  width: 80%;
+  max-width: 80%;
   margin-bottom: calc(1 * var(--md-gap));
 }
-@media (width <= 57.74875rem) {
+@media (width <= 50.06125rem) {
   body .leading:not(.header div, .header p) {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (width <= 50.06125rem) {
+  body .leading {
+    max-width: 100%;
   }
 }
 @media (width <= 57.74875rem) {
@@ -709,6 +714,12 @@ body .magic {
 @media (width <= 57.74875rem) {
   .header__description-itemWrap-leading {
     max-width: 80%;
+  }
+}
+@media (width <= 40.06125rem) {
+  .header__description-itemWrap-leading {
+    max-width: 100%;
+    text-wrap: pretty;
   }
 }
 @media (width <= 81.06125rem) {

@@ -176,14 +176,17 @@ body {
         text-wrap: balance;
 
         &:not(.header div, .header p/*, p.leading*/) {
-            width: 80%;
+            max-width: 80%;
             margin-bottom: calc(1 * var(--md-gap));
 
-            @include middle {
-                width: 100%;
+            @include middleSm {
+                max-width: 100%;
             }
         }
 
+        @include middleSm {
+            max-width: 100%;
+        }
 
 
 
