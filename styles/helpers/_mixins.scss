@@ -38,7 +38,7 @@
 @mixin enlargedClick ($sm-gap: var(--sm-gap)) {
     content: ''; 
     position: absolute; 
-    inset: calc(-1 * var(--sm-gap)) calc( calc(-1 * var(--sm-gap)) / 2);
+    inset: calc(-1 * var(--sm-gap) / 2) calc( calc(-1 * var(--sm-gap)) / 2);
 }
 
 // @mixin enlargedClickLastChild ($sm-gap: var(--sm-gap)) {

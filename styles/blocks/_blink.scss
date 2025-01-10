@@ -1,3 +1,5 @@
+@use '../helpers/' as *;
+
 .blink {
 
     &__heading-trans {
@@ -6,6 +8,14 @@
 
         &-example {
             flex: 1;
+
+            &-img {
+                @include middleSm {
+                    & .caption {
+                        display: none;
+                    } 
+                }
+            }
 
             &:nth-child(2) {
                 gap: var(--sm-gap);

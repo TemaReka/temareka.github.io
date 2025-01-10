@@ -275,5 +275,13 @@ body {
             margin-bottom: 0;
         }
     }
+
+    .diminishedHeading {
+        @include middleSm {
+            & {
+                font-size: 3.3em;
+            }
+        }    
+    }
 }
 

@@ -40,7 +40,13 @@
 }
 
 .textP {
-    max-width: 70%;
+    width: 70%;
+
+    @include middleSm {
+        & {
+            width: 100%;
+        }
+    }
 }
 
 .flexVertical {
