@@ -21,11 +21,11 @@
     
 // }
 
-@mixin linkIcon ($width: rem(26), $height: rem(26), $link: '.././icons/telegram.svg') {
+@mixin linkIcon (/*$width: fluid(30, 24), $height: fluid(30, 24),*/ $link: '.././icons/telegram.svg') {
     content: '';
     display: inline-block;
-    width: $width;
-    height: $height;
+    width: fluid(30, 24);
+    height: fluid(30, 24);
     background-image: url($link);
     background-size: cover;
     background-repeat: no-repeat;

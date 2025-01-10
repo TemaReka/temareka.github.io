@@ -18,14 +18,14 @@
     }
 
     .media::after {
-        @include linkIcon(rem(22), rem(22), '.././icons/telegram.svg'); 
+        @include linkIcon('.././icons/telegram.svg'); 
     }
 
     &.pageNav a:nth-child(2) {
-        padding-left: calc(var(--md-gap));
-
         &::after {
-            @include linkIcon(rem(22), rem(22), '.././icons/telegram.svg'); 
+            @include linkIcon('.././icons/telegram.svg');
+            width: fluid(24, 16);
+            height: fluid(24, 16);
         }
 
     }

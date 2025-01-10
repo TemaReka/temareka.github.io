@@ -4,7 +4,7 @@
     // border-bottom: 1px solid black;
     display: flex;
     gap: var(--lg-gap);
-    align-items: center;
+    align-items: flex-end;
 
 
     @include laptop {
@@ -78,22 +78,20 @@
 
             & a {
                 position: relative;
-                padding-left: calc(rem(26) + var(--sm-gap));
+                padding-left: fluid(40, 30);
                 margin-bottom: 0;
 
 
                 &:nth-child(1) {
                     &::after {
                         @include linkIcon();
-                        transform: translateY(-35%); 
                     }
                 }
 
                 
                 &:nth-child(2) {
                     &::after {
-                        @include linkIcon(rem(26), rem(26), '.././icons/mail.svg');
-                        transform: translateY(-35%); 
+                        @include linkIcon('.././icons/mail.svg');
                     }
                 }
 
