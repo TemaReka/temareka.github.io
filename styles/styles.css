@@ -321,13 +321,16 @@ body p:has(.marginBeforeTopic) {
 body a {
   position: relative;
   color: oklch(var(--link-color));
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+body a u {
   text-decoration: underline;
   text-decoration-thickness: 0.0625rem; /* Задаём толщину подчёркивания */
   text-underline-offset: 0.175em; /* Задаём сдвиг подчёркивания */
   text-decoration-color: oklch(var(--link-color)/0.2);
   text-decoration-skip: none; /* Запрещаем подчёркиванию пропускать выносные элементы букв */
   text-decoration-skip-ink: none;
-  transition: color 0.5s ease;
 }
 body a:not(a:last-child):not(.wrappingLink):not(.leading):before {
   content: "";
@@ -345,37 +348,43 @@ body a:last-child:not(.wrappingLink)::before {
 @media (any-hover: hover) {
   body a:hover {
     color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body a:hover u {
     text-decoration: underline;
     text-decoration-thickness: 0.0625rem; /* Задаём толщину подчёркивания */
     text-underline-offset: 0.175em; /* Задаём сдвиг подчёркивания */
     text-decoration-color: oklch(var(--hover-link-color));
     text-decoration-skip: none; /* Запрещаем подчёркиванию пропускать выносные элементы букв */
     text-decoration-skip-ink: none;
-    transition: color 0s;
   }
 }
 @media (any-hover: none) {
   body a:active {
     color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body a:active u {
     text-decoration: underline;
     text-decoration-thickness: 0.0625rem; /* Задаём толщину подчёркивания */
     text-underline-offset: 0.175em; /* Задаём сдвиг подчёркивания */
     text-decoration-color: oklch(var(--hover-link-color));
     text-decoration-skip: none; /* Запрещаем подчёркиванию пропускать выносные элементы букв */
     text-decoration-skip-ink: none;
-    transition: color 0s;
   }
 }
 @media (any-hover: hover) {
   body a:hover {
     color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body a:hover u {
     text-decoration: underline;
     text-decoration-thickness: 0.0625rem; /* Задаём толщину подчёркивания */
     text-underline-offset: 0.175em; /* Задаём сдвиг подчёркивания */
     text-decoration-color: oklch(var(--hover-link-color));
     text-decoration-skip: none; /* Запрещаем подчёркиванию пропускать выносные элементы букв */
     text-decoration-skip-ink: none;
-    transition: color 0s;
   }
 }
 body section, body header {
