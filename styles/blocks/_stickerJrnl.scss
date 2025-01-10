@@ -9,6 +9,10 @@
 
     &__heading-trans-example {
         max-width: 70%;
+
+        @include middleSm {
+            max-width: 100%;
+        }
     }
 
     &__body {

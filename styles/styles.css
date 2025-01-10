@@ -474,7 +474,7 @@ body .caption {
 }
 @media (width <= 50.06125rem) {
   body .caption {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 body .spaceBtm {
@@ -908,6 +908,11 @@ footer p:not(:last-child), footer a {
 }
 .stickerJrnl__heading-trans-example {
   max-width: 70%;
+}
+@media (width <= 50.06125rem) {
+  .stickerJrnl__heading-trans-example {
+    max-width: 100%;
+  }
 }
 .stickerJrnl__body-img {
   margin-bottom: var(--md-gap);
