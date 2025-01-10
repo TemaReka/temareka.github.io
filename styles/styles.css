@@ -583,7 +583,8 @@ body section.pageNav a {
   }
 }
 body .magic {
-  width: clamp(1.5rem, 0.6290322581rem + 3.8709677419vw, 4.5rem);
+  width: clamp(2.625rem, 2.0806451613rem + 2.4193548387vw, 4.5rem);
+  height: clamp(2.625rem, 2.0806451613rem + 2.4193548387vw, 4.5rem);
 }
 
 .header {
