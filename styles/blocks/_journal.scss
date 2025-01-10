@@ -1,3 +1,5 @@
+@use '../helpers/' as *;
+
 .journal {
 
     &__heading-trans {
@@ -18,6 +20,18 @@
     &__body {
         &-img {
             margin-bottom: var(--md-gap);
+            display: flex;
+            gap: var(--sm-gap);
+            flex-direction: column;
+
+            & picture:nth-child(2) {
+                display: none;
+
+                @include sm {
+                    display: block;
+                }
+            }
+
         }
     }
 

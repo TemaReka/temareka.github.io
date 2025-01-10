@@ -900,6 +900,17 @@ footer p:not(:last-child), footer a {
 }
 .journal__body-img {
   margin-bottom: var(--md-gap);
+  display: flex;
+  gap: var(--sm-gap);
+  flex-direction: column;
+}
+.journal__body-img picture:nth-child(2) {
+  display: none;
+}
+@media (width <= 40.06125rem) {
+  .journal__body-img picture:nth-child(2) {
+    display: block;
+  }
 }
 
 .stickerJrnl__heading-trans {
