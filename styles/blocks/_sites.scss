@@ -1,6 +1,12 @@
+@use '../helpers' as *;
+
 .sites {
     &__itemContainer {
         margin-bottom: var(--lg-gap);
+
+        @include middleSm {
+            margin-bottom: var(--md-gap);
+        }
 
         &-img {
             margin-bottom: var(--sm-gap);

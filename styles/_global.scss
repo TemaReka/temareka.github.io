@@ -71,6 +71,11 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: var(--md-gap) var(--md-gap);
+
+        @include middleSm {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     .gridItem {
@@ -158,7 +163,15 @@ body {
         &:not(.header div, .header p/*, p.leading*/) {
             width: 80%;
             margin-bottom: calc(1 * var(--md-gap));
+
+            @include middle {
+                width: 100%;
+            }
         }
+
+
+
+
     }
 
     @include middle {

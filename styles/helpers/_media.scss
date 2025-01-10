@@ -2,6 +2,7 @@
 
 $laptop: 1296.98;
 $middle: 923.98;
+$middleSm: 800.98;
 
 @mixin laptop {
     @media (width <= rem($laptop)) {
@@ -11,6 +12,12 @@ $middle: 923.98;
 
 @mixin middle {
     @media (width <= rem($middle)) {
+        @content;
+    }
+}
+
+@mixin middleSm {
+    @media (width <= rem($middleSm)) {
         @content;
     }
 }

@@ -1,5 +1,14 @@
+@use '../helpers/' as *;
+
 .print {
     &__grid {
+
+        & > div {
+            @include middleSm {
+                display: none;
+            }
+        }
+
         &-item {
 
             &-img {
@@ -8,6 +17,9 @@
 
             &:nth-of-type(1) {
                 grid-column: 1 / span 3;
+
+                
+
                 
                 & .gridItemImg {
                     height: 100%;

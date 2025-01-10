@@ -1,18 +1,34 @@
+@use '../helpers/' as *;
+
 .remakes {
     &__example {
         margin-bottom: var(--lg-gap);
-
         max-width: 100%;
+
+        @include middleSm {
+            margin-bottom: var(--md-gap);
+        }
+
         &-img {
             display: flex;
             gap: var(--sm-gap);
             margin-bottom: var(--sm-gap);
+
+            @include middleSm {
+                flex-direction: column;
+            }
 
             & span {
                 display: flex;
                 align-items: center;
                 font-size: 3em;
                 color: #333;
+
+                @include middleSm {
+                    justify-content: center;
+                    transform: rotate(90deg);
+                }
+    
             }
 
             & div {

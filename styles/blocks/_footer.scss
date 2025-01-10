@@ -3,4 +3,9 @@
 footer {
     display: flex;
     gap: var(--sm-gap);
+    flex-wrap: wrap;
+
+    p:not(:last-child), a {
+        margin-bottom: 0;
+    }
 }

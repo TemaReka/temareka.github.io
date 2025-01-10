@@ -134,6 +134,12 @@
                 
             }
 
+            &-leading {
+                @include middle {
+                    max-width: 80%;
+                }
+            }
+
             @include laptop {
                 margin-bottom: var(--md-gap);
             }
@@ -141,8 +147,7 @@
             @include middle {
                 &:nth-child(1) {
                     margin-bottom: 0;
-                }
-                
+                } 
             }
         }
     }
