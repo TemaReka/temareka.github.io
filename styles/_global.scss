@@ -16,7 +16,7 @@ body {
     }
 
     ::selection {
-        background: oklch(var(--link-color) / 0.8);
+        background: oklch(var(--selection-color));
         color: #fff;
       }
 
