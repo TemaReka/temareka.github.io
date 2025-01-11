@@ -1,7 +1,7 @@
 node_modules/
 .vscode/
 imgOld/
-preview/
+# preview/
 
 # google320a06b223b64ec4.html
 # yandex_85c2fb5f9086d94d.html
