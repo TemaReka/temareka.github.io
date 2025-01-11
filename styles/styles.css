@@ -408,25 +408,71 @@ body .gridItem {
   display: flex;
   flex-direction: column;
 }
-body .hoverItem:hover .hoverItem-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  transition: opacity 0s;
-  background-color: oklch(var(--hover-link-color)/0.1);
-  z-index: 1;
+@media (any-hover: hover) {
+  body .hoverItem:hover .hoverItem-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0s;
+    background-color: oklch(var(--hover-link-color)/0.1);
+    z-index: 1;
+  }
+  body .hoverItem:hover .hoverItem-dscr {
+    color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body .hoverItem:hover .hoverItem-span {
+    color: oklch(var(--hover-link-color)/0.4);
+    transition: color 0s;
+  }
 }
-body .hoverItem:hover .hoverItem-dscr {
-  color: oklch(var(--hover-link-color));
-  transition: color 0s;
+@media (any-hover: none) {
+  body .hoverItem:active .hoverItem-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0s;
+    background-color: oklch(var(--hover-link-color)/0.1);
+    z-index: 1;
+  }
+  body .hoverItem:active .hoverItem-dscr {
+    color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body .hoverItem:active .hoverItem-span {
+    color: oklch(var(--hover-link-color)/0.4);
+    transition: color 0s;
+  }
 }
-body .hoverItem:hover .hoverItem-span {
-  color: oklch(var(--hover-link-color)/0.4);
-  transition: color 0s;
+@media (any-hover: hover) {
+  body .hoverItem:hover .hoverItem-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: opacity 0s;
+    background-color: oklch(var(--hover-link-color)/0.1);
+    z-index: 1;
+  }
+  body .hoverItem:hover .hoverItem-dscr {
+    color: oklch(var(--hover-link-color));
+    transition: color 0s;
+  }
+  body .hoverItem:hover .hoverItem-span {
+    color: oklch(var(--hover-link-color)/0.4);
+    transition: color 0s;
+  }
 }
 body .hoverItem-img {
   position: relative;
