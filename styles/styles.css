@@ -454,7 +454,7 @@ body .noVerge {
   overflow: auto;
 }
 body .roundedCorners {
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   overflow: auto;
 }
 body .gridItem-img {
@@ -1009,9 +1009,7 @@ footer p:not(:last-child), footer a {
   flex: 1.2530537655;
 }
 .akai__body-img {
-  margin-bottom: var(--md-gap);
-}
-.akai__body-img img:nth-child(1) {
+  display: flex;
   margin-bottom: var(--md-gap);
 }
 

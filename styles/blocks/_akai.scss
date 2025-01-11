@@ -36,11 +36,8 @@
 
     &__body {
         &-img {
+            display: flex;
             margin-bottom: var(--md-gap);
-
-            & img:nth-child(1) {
-                margin-bottom: var(--md-gap);
-            }
         }
     }
 
