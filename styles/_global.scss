@@ -15,6 +15,11 @@ body {
         text-wrap: balance;
     }
 
+    ::selection {
+        background: oklch(var(--link-color) / 0.8);
+        color: #fff;
+      }
+
     // @include middle {
      
     // }

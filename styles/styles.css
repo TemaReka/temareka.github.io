@@ -315,6 +315,10 @@ body h1 {
   margin-bottom: var(--sm-gap);
   text-wrap: balance;
 }
+body ::selection {
+  background: oklch(var(--link-color)/0.8);
+  color: #fff;
+}
 body p:has(.marginBeforeTopic) {
   margin-bottom: var(--lg-gap);
 }
