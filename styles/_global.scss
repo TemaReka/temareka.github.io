@@ -164,32 +164,6 @@ body {
                 transition: color 0s;
             }
         }
-        
-        // &:hover {
-
-        //     & .hoverItem-img::before {
-        //         content: ''; 
-        //         position: absolute;
-        //         top: 0;
-        //         left: 0; 
-        //         right: 0; 
-        //         bottom: 0; 
-        //         opacity: 1;
-        //         transition: opacity 0s;
-        //         background-color: oklch(var(--hover-link-color) / 0.1);
-        //         z-index: 1; 
-        //     }
-
-        //     & .hoverItem-dscr {
-        //         color: oklch(var(--hover-link-color));
-        //         transition: color 0s;
-        //     }
-
-        //     & .hoverItem-span {
-        //         color: oklch(var(--hover-link-color) / 0.4);
-        //         transition: color 0s;
-        //     }
-        // }
 
         &-img {
             position: relative;

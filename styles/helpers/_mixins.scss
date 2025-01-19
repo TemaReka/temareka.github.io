@@ -21,7 +21,7 @@
     
 // }
 
-@mixin linkIcon (/*$width: fluid(30, 24), $height: fluid(30, 24),*/ $link: '.././icons/telegram.svg') {
+@mixin linkIcon ($width: fluid(30, 24), $height: fluid(30, 24), $link: '.././icons/telegram.svg') {
     content: '';
     display: inline-block;
     width: fluid(30, 24);
